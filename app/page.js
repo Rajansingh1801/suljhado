@@ -28,44 +28,44 @@ export default function Home() {
     >
       <form
         onSubmit={handleClick}
-        className="backdrop-blur-lg bg-black/40 border border-white/10 text-white p-10 rounded-2xl shadow-2xl w-full max-w-5xl space-y-6"
+        className="backdrop-blur-lg bg-black/40 border border-white/10 text-white p-10 rounded-2xl shadow-2xl w-full max-w-7xl space-y-6"
       >
-        <h1 className="text-3xl font-bold text-center text-green-400">🔐 The Decrypter Tool</h1>
+        <h1 className="text-3xl font-bold text-center text-white">🔐 The Decrypter Tool</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="space-y-6">
             <div>
-              <label className="block text-green-200 font-semibold mb-1">Key</label>
+              <label className="block text-white font-semibold mb-1">Key</label>
               <input
                 type="text"
                 value={key}
                 onChange={(e) => setKey(e.target.value)}
                 placeholder="Enter decryption key"
                 required
-                className="w-full px-4 py-2 bg-black/30 border border-green-500 text-green-100 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400"
+                className="w-full px-4 py-2 bg-black/30 border border-white text-white rounded-md focus:outline-none focus:ring-2 focus:ring-white"
               />
             </div>
 
             <div>
-              <label className="block text-green-200 font-semibold mb-1">Encrypted Data</label>
+              <label className="block text-white font-semibold mb-1">Encrypted Data</label>
               <textarea
                 value={data}
                 onChange={(e) => setData(e.target.value)}
                 placeholder="Paste encrypted data"
                 required
                 rows={8}
-                className="w-full px-4 py-2 bg-black/30 border border-green-500 text-green-100 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400"
+                className="w-full px-4 py-2 bg-black/30 border h-[400px] border-white text-white rounded-md focus:outline-none focus:ring-2 focus:ring-white"
               />
             </div>
           </div>
 
           <div>
-            <label className="block text-green-200 font-semibold mb-1">Decrypted Data</label>
+            <label className="block text-white font-semibold mb-1">Decrypted Data</label>
             <textarea
               value={dcrptData}
               readOnly
               rows={16}
-              className="w-full h-full px-4 py-2 bg-black/20 border border-green-500 text-green-200 rounded-md"
+              className="w-full h-full px-4 py-2 bg-black/20 border border-white text-white rounded-md"
             />
           </div>
         </div>
@@ -73,7 +73,7 @@ export default function Home() {
         <div className="text-center pt-10">
           <button
             type="submit"
-            className="px-8 py-3 bg-green-600 text-white font-bold rounded-md shadow hover:bg-green-700 transition"
+            className="px-8 py-3 bg-green-800 text-white font-bold rounded-md shadow hover:bg-white transition"
           >
             Decrypt
           </button>

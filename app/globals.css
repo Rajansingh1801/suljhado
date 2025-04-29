@@ -26,5 +26,7 @@ body {
 }
 
 .banner-img {
-  background-image: url("../public/img.jpg");
+  /* background-image: url("../public/img.jpg"); */
+  background-image: url("../public/img2.png");
+  background-size: fill;
 }
